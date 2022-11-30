@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Block Scope</h1>
+    <p id="demo"></p><br>
+    <p id="demo1"></p>
+
+    <script>
+        // let x = "John Doe";
+        // let x = 0;
+        // SyntaxError: 'x' has already been declare
+        var x = "John Doe";
+        var x = 0;
+        // in var keyword you declared value 
+    </script>
+
+
+    <script>
+
+
+        //Block Scope
+        {
+            let x = 2;
+        }
+        // x can NOT be used here
+
+
+
+        {
+            var x = 2;
+        }
+        // x CAN be used here
+
+    </script>
+
+
+    <script>
+        var x = 3;
+        {
+            var x = 12;
+            //block scope not working in var keyword;
+        }
+        document.getElementById("demo").innerHTML = x;
+    </script>
+
+
+    <script>
+        let x = 3;
+        {
+            let x = 12;
+            //block scope working in let keyword;
+        }
+        document.getElementById("demo1").innerHTML = x;
+    </script>
+
+</body>
+</html>
