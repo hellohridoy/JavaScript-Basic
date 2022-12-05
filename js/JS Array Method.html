@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array Mthod</title>
+</head>
+<body>
+    
+    <h1>JS Array Method</h1>
+    <p id="demo"></p>
+    <h1>Concat Array</h1>
+    <p id="demo1"></p>
+    <h1>Splice method</h1>
+    <p id="demo2"></p>
+    <h1>Slice method</h1>
+    <p id="demo3"></p>
+    
+    <p id="demo4"></p>
+
+    <script>
+        const carList = ["BMW","VOLVO","Ferari","Sujuki"];
+        document.getElementById("demo").innerHTML = carList.toString();
+        document.getElementById("demo1").innerHTML = carList.join(" * ");
+    </script>
+
+
+    <script>
+        const girl = ["salma","rina","mina"];
+        const boy = ["Hridoy","Hossain"];
+        const all = girl.concat(boy);
+        document.getElementById("demo2").innerHTML = all;
+    </script>
+        
+    <script>
+        //splice method
+        const girls = ["salma","rina","mina"];
+        girls.splice(2,0,"keya","hena"); //2 start point and 0 is how many item removed
+        girls.splice(0,1);
+        document.getElementById("demo3").innerHTML = girls;
+    </script>
+
+
+    <script>
+        const name = ["salma","rina","mina"];
+        const citrus = name.slice(1);
+        document.getElementById("demo4").innerHTML = name + "</br>" + citrus;
+    </script>
+
+
+
+
+
+
+</body>
+</html>
