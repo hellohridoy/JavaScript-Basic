@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Set</title>
+</head>
+<body>
+    <h1>JavaScript Sets</h1>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        const letter = new Set(["a","b","c"]);
+        letter.add("d");
+        letter.add("e");
+        letter.add("f");
+        letter.add("d");
+        document.getElementById("demo").innerHTML = letter.size;
+        let txt = "";
+        for(const x of letter.values()){
+            txt+=x+"</br>";
+        }
+        document.getElementById("demo2").innerHTML = txt;
+    </script>
+</body>
+</html>
